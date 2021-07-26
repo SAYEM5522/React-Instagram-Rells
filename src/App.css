@@ -1,0 +1,38 @@
+html {
+  scroll-snap-type: y mandatory;
+}
+.app {
+  background-color: black;
+  color: white;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.app__top > img {
+  height: 12vh;
+  object-fit: contain;
+}
+.app__top {
+  text-align: center;
+}
+.app__top > h1 {
+  margin-top: 6px;
+}
+.app__videos {
+  position: relative;
+  height: 85vh;
+  border-radius: 20px;
+  scroll-snap-type: y mandatory;
+  background-color: white;
+  width: 330px;
+  color: black;
+  overflow: scroll;
+  border: none;
+}
+.app__videos::-webkit-scrollbar {
+  display: none;
+}
+.app__videos {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
